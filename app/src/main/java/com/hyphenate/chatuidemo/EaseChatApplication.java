@@ -24,10 +24,10 @@ import com.hyphenate.chatuidemo.utils.HuanXinHelper;
 //import io.fabric.sdk.android.Fabric;
 // ============== fabric end
 
-public class DemoApplication extends Application {
+public class EaseChatApplication extends Application {
 
 	public static Context applicationContext;
-	private static DemoApplication instance;
+	private static EaseChatApplication instance;
 	// login user name
 	public final String PREF_USERNAME = "username";
 	
@@ -83,7 +83,7 @@ public class DemoApplication extends Application {
 		//end of red packet code*/
 	}
 
-	public static DemoApplication getInstance() {
+	public static EaseChatApplication getInstance() {
 		return instance;
 	}
 

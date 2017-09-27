@@ -5,8 +5,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.text.TextUtils;
 
-import com.hyphenate.chatuidemo.Constant;
-import com.hyphenate.chatuidemo.DemoApplication;
+import com.hyphenate.chatuidemo.utils.Constant;
+import com.hyphenate.chatuidemo.EaseChatApplication;
 import com.hyphenate.chatuidemo.domain.InviteMessage;
 import com.hyphenate.chatuidemo.domain.InviteMessage.InviteMessageStatus;
 import com.hyphenate.chatuidemo.domain.RobotUser;
@@ -25,7 +25,7 @@ public class DemoDBManager {
     private DbOpenHelper dbHelper;
     
     private DemoDBManager(){
-        dbHelper = DbOpenHelper.getInstance(DemoApplication.getInstance().getApplicationContext());
+        dbHelper = DbOpenHelper.getInstance(EaseChatApplication.getInstance().getApplicationContext());
     }
     
     public static synchronized DemoDBManager getInstance(){
